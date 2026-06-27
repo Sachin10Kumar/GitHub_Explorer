@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { min-height: 100%; }
+body { margin: 0; }
+
+/* Smooth focus for keyboard users */
+:focus-visible {
+  outline: 2px solid #58A6FF;
+  outline-offset: 2px;
+}
+
+/* Native select styling on dark backgrounds */
+select option {
+  background-color: #161B22;
+  color: #F0F6FC;
+}
+
+/* Scrollbar — subtle on Chrome/Edge */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #21262D; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #58A6FF; }
